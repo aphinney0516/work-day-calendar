@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     // loop over time blocks
     $('.time-block').each(function () {
-      var blockHour = parseInt($(this).attr('id').split('-')[1]);
+      var blockHour = parseInt($(this).attr('id')curl http://api.github.com;
 
       // check if we've moved past this time
       if (blockHour < currentHour) {
