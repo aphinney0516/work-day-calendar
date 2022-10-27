@@ -54,15 +54,15 @@ $(document).ready(function () {
   var interval = setInterval(hourUpdater, 15000);
 
   // load any saved data from localStorage
-  $('#9 .description').val(localStorage.getItem('9'));
-  $('#10 .description').val(localStorage.getItem('10'));
-  $('#11 .description').val(localStorage.getItem('11'));
-  $('#12 .description').val(localStorage.getItem('12'));
-  $('#13 .description').val(localStorage.getItem('13'));
-  $('#14 .description').val(localStorage.getItem('14'));
-  $('#15 .description').val(localStorage.getItem('15'));
-  $('#16 .description').val(localStorage.getItem('16'));
-  $('#17 .description').val(localStorage.getItem('17'));
+  $('#h9 .description').val(localStorage.getItem('h9'));
+  $('#h10 .description').val(localStorage.getItem('h10'));
+  $('#h11 .description').val(localStorage.getItem('h11'));
+  $('#h12 .description').val(localStorage.getItem('h12'));
+  $('#h13 .description').val(localStorage.getItem('h13'));
+  $('#h14 .description').val(localStorage.getItem('h14'));
+  $('#h15 .description').val(localStorage.getItem('h15'));
+  $('#h16 .description').val(localStorage.getItem('h16'));
+  $('#h17 .description').val(localStorage.getItem('h17'));
 
   // display current day on page
   $('#currentDay').text(moment().format('dddd, MMMM Do'));
