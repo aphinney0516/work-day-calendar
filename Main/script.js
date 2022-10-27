@@ -36,6 +36,15 @@ $(document).ready(function () {
         $(this).removeClass('present');
         $(this).addClass('future');
       }
+
+      // // check to see if there are any future appointments
+      // var futureApp = blockHour + "user input";
+      // if (futureApp === true) {
+      //   $(this).removeClass(future);
+      //   $(this).addClass(future-appointment);
+      // } else {
+      //   hourUpdater();
+      // }
     });
   }
 
