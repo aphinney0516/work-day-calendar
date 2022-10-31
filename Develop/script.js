@@ -1,9 +1,14 @@
-//function to update the present block of time
+//function to get the current hour
+function hourUpdater() {
+    var currentHour = moment().hours();
+}
 
-//function to save user input into a block of time
+//function to see if time has moved passed the current hour
 
-//function to change past block to gray and future blocks to grteen
+//function to save user input into a block of time/local storage
 
-//bonus function to change future booked appointment to yellow
+//function to change past block to gray and future blocks to green
+
+//bonus function to change future booked appointments to yellow
 
 //if there's time make a function to notify when events are saved
