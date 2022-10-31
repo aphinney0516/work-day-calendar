@@ -1,14 +1,36 @@
-//function to get the current hour
+$(document).ready(function(){
+
+// display current day on page
+$('#currentDay').text(moment().format('dddd, MMMM Do'));
+
+//function to get the current hour and change hour colors
 function hourUpdater() {
     var currentHour = moment().hours();
+    console.log(currentHour);
+    $(".time-block").each(function(){
+        var rowHour = parseInt($(this)
+        .attr("id"))
+        if (currentHour > rowHour) {
+            $(this).children(".description").addClass("past")
+        }
+        else if (currentHour === rowHour) {
+            $(this).children(".description").addClass("present")
+        }
+        else {
+            $(this).children(".description").addClass("future")
+        }
+    })
 }
-
-//function to see if time has moved passed the current hour
+hourUpdater();
 
 //function to save user input into a block of time/local storage
+$(".saveBtn").on("click",function(){
+    var hourKey = $(this).parent().attr("id")
+    var activity = $(this).siblings(".description").val()
+    localStorage.setItem(hourKey,activity)
+})
 
-//function to change past block to gray and future blocks to green
-
-//bonus function to change future booked appointments to yellow
-
-//if there's time make a function to notify when events are saved
+for(var i=9; i<18; i++) {
+    $(`#${i} .description`).val(localStorage.getItem(i))
+}
+})
